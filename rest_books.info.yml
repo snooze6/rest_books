@@ -1,4 +1,16 @@
-name: Module name
+name: REST_books
 type: module
-description: 'A description of what your module does.'
+description: 'Provides a REST Api for Books and Books genres'
 core: 8.x
+dependencies:
+- hal
+- basic_auth
+- restui
+- rest
+- serialization
+- simple_oauth
+- link
+- filter
+- node
+- taxonomy
+- views
