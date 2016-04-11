@@ -28,3 +28,4 @@ permissions:
   - 'restful post entity:node'
   - 'restful post entity:taxonomy_term'
   - 'edit terms in booksgenres'
+  - 'access own consumers'

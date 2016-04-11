@@ -8,6 +8,7 @@ dependencies:
 - restui
 - rest
 - serialization
+- simple_oauth
 - link
 - filter
 - node
