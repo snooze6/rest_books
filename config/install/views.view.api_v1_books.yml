@@ -1,4 +1,4 @@
-#uuid: d7753ffc-b540-4058-8c99-06148d8ff563
+#uuid: 9ef3db1f-b540-4aa2-a388-eff42239c164
 langcode: en
 status: true
 dependencies:
@@ -15,6 +15,8 @@ dependencies:
     - rest
     - text
     - user
+_core:
+  default_config_hash: 9AD6KO9Lvta6ZQwwrK-MLRPLiRjKSyd20Ya8d1c4VwM
 id: api_v1_books
 label: api/v1/books
 module: views
