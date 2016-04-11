@@ -1,0 +1,27 @@
+uuid: ebe009a9-beab-468f-bbdb-2b525bf53054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clasification
+    - node.type.book
+    - taxonomy.vocabulary.booksgenres
+id: node.book.field_clasification
+field_name: field_clasification
+entity_type: node
+bundle: book
+label: Clasification
+description: 'Reference to the book genre (Storaged appart with its own description)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      booksgenres: booksgenres
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 4dd75458-bd07-48a9-b1b7-89b28428adc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.book
+id: node.book.field_author
+field_name: field_author
+entity_type: node
+bundle: book
+label: Author
+description: 'The autor of the book'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
