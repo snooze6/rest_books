@@ -1,4 +1,4 @@
-# uuid: f7118cf7-1d17-4eaf-958e-82bab2deff77
+# uuid: 32a8230b-174d-4beb-8273-7179de2d407b
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - user
 _core:
   default_config_hash: rNLJDQQL_dZwP3dwhe0wPOTgKe8yAuelBiPyRCn5VOk
-id: api_v1_books_genres
-label: api/v1/books/genres
+id: api_v1_rawbooks_genres
+label: api/v1/rawbooks/genres
 module: views
 description: ''
 tag: ''
@@ -86,54 +86,39 @@ display:
           id: name
           table: taxonomy_term_field_data
           field: name
+          entity_type: taxonomy_term
+          entity_field: name
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          type: string
+          settings:
+            link_to_entity: true
+          plugin_id: term_name
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -145,9 +130,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         description__value:
           id: description__value
           table: taxonomy_term_field_data
@@ -180,7 +162,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
             preserve_tags: ''
             html: false
@@ -435,7 +417,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: api/v1/books/genres
+      path: api/v1/rawbooks/genres
       pager:
         type: full
         options:
@@ -487,7 +469,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: api/v1/books/genres/%
+      path: api/v1/rawbooks/genres/%
       pager:
         type: full
         options:
